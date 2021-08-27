@@ -22,7 +22,7 @@ public:
     QVector<Code> *codeList() const;
 
     OperationTypes getCurrentStatus() const;
-    void setCurrentStatus(OperationTypes newCurrentStatus);
+    virtual bool changeOperationState(OperationTypes newCurrentStatus) = 0;
 
 private:
     Code *m_code;

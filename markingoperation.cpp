@@ -19,13 +19,3 @@ QVector<Code> *MarkingOperation::codeList() const
 {
     return m_codeList;
 }
-
-OperationTypes MarkingOperation::getCurrentStatus() const
-{
-    return currentStatus;
-}
-
-void MarkingOperation::setCurrentStatus(OperationTypes newCurrentStatus)
-{
-    currentStatus = newCurrentStatus;
-}
